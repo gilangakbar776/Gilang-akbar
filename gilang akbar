@@ -1,0 +1,16 @@
+<?php
+$arrayData = '{
+    "nama" : "Gilang",
+    "usia": 22,
+    "pekerjaan" : "mahasiswa",
+    "hobi" : "tukang pukul"
+}';
+
+// Decode JSON kembali ke array
+$decodeData = json_decode($arrayData);
+echo "data dalam format JSON: ";
+echo "nama: ". $decodeData->nama;
+echo ", usia: ". $decodeData->usia;
+echo ", pekerjaan: ". $decodeData->pekerjaan;
+echo ", hobi: ". $decodeData->hobi;
+?>
